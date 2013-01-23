@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E92B5AD216AF95D1004011FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5AD116AF95D1004011FB /* UIKit.framework */; };
+		E92B5AD416AF95D1004011FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5AD316AF95D1004011FB /* Foundation.framework */; };
+		E92B5AD616AF95D1004011FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5AD516AF95D1004011FB /* CoreGraphics.framework */; };
+		E92B5ADC16AF95D1004011FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E92B5ADA16AF95D1004011FB /* InfoPlist.strings */; };
+		E92B5ADE16AF95D1004011FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5ADD16AF95D1004011FB /* main.m */; };
+		E92B5AE216AF95D1004011FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5AE116AF95D1004011FB /* AppDelegate.m */; };
+		E92B5AE416AF95D1004011FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AE316AF95D1004011FB /* Default.png */; };
+		E92B5AE616AF95D1004011FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AE516AF95D1004011FB /* Default@2x.png */; };
+		E92B5AE816AF95D1004011FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AE716AF95D1004011FB /* Default-568h@2x.png */; };
+		E92B5AEB16AF95D1004011FB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5AEA16AF95D1004011FB /* ViewController.m */; };
+		E92B5AEE16AF95D1004011FB /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AEC16AF95D1004011FB /* ViewController_iPhone.xib */; };
+		E92B5AF116AF95D1004011FB /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AEF16AF95D1004011FB /* ViewController_iPad.xib */; };
+		E92B5B7816AF960F004011FB /* DEEmbossedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5AFA16AF960F004011FB /* DEEmbossedLabel.m */; };
+		E92B5B7916AF960F004011FB /* DERuledView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5AFC16AF960F004011FB /* DERuledView.m */; };
+		E92B5B7A16AF960F004011FB /* DETweetAccountSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5AFE16AF960F004011FB /* DETweetAccountSelectorViewController.m */; };
+		E92B5B7B16AF960F004011FB /* DETweetComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B5AFF16AF960F004011FB /* DETweetComposeView.xib */; };
+		E92B5B7C16AF960F004011FB /* DETweetComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0116AF960F004011FB /* DETweetComposeViewController.m */; };
+		E92B5B7D16AF960F004011FB /* DETweetGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0316AF960F004011FB /* DETweetGradientView.m */; };
+		E92B5B7E16AF960F004011FB /* DETweetPoster.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0516AF960F004011FB /* DETweetPoster.m */; };
+		E92B5B7F16AF960F004011FB /* DETweetSheetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0716AF960F004011FB /* DETweetSheetCardView.m */; };
+		E92B5B8016AF960F004011FB /* DETweetTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0916AF960F004011FB /* DETweetTextView.m */; };
+		E92B5B8116AF960F004011FB /* OAuth+DEExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0B16AF960F004011FB /* OAuth+DEExtensions.m */; };
+		E92B5B8216AF960F004011FB /* OAuth+DEUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B0D16AF960F004011FB /* OAuth+DEUserDefaults.m */; };
+		E92B5B8316AF960F004011FB /* DETweetAttachmentFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B0F16AF960F004011FB /* DETweetAttachmentFrame.png */; };
+		E92B5B8416AF960F004011FB /* DETweetAttachmentFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1016AF960F004011FB /* DETweetAttachmentFrame@2x.png */; };
+		E92B5B8516AF960F004011FB /* DETweetCancelButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1116AF960F004011FB /* DETweetCancelButtonLandscape.png */; };
+		E92B5B8616AF960F004011FB /* DETweetCancelButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1216AF960F004011FB /* DETweetCancelButtonLandscape@2x.png */; };
+		E92B5B8716AF960F004011FB /* DETweetCancelButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1316AF960F004011FB /* DETweetCancelButtonPortrait.png */; };
+		E92B5B8816AF960F004011FB /* DETweetCancelButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1416AF960F004011FB /* DETweetCancelButtonPortrait@2x.png */; };
+		E92B5B8916AF960F004011FB /* DETweetCardAccountLine.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1516AF960F004011FB /* DETweetCardAccountLine.png */; };
+		E92B5B8A16AF960F004011FB /* DETweetCardAccountLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1616AF960F004011FB /* DETweetCardAccountLine@2x.png */; };
+		E92B5B8B16AF960F004011FB /* DETweetCardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1716AF960F004011FB /* DETweetCardBackground.png */; };
+		E92B5B8C16AF960F004011FB /* DETweetCardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1816AF960F004011FB /* DETweetCardBackground@2x.png */; };
+		E92B5B8D16AF960F004011FB /* DETweetCardHeaderLine.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1916AF960F004011FB /* DETweetCardHeaderLine.png */; };
+		E92B5B8E16AF960F004011FB /* DETweetCardHeaderLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1A16AF960F004011FB /* DETweetCardHeaderLine@2x.png */; };
+		E92B5B8F16AF960F004011FB /* DETweetPaperClip.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1B16AF960F004011FB /* DETweetPaperClip.png */; };
+		E92B5B9016AF960F004011FB /* DETweetPaperClip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1C16AF960F004011FB /* DETweetPaperClip@2x.png */; };
+		E92B5B9116AF960F004011FB /* DETweetSendButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1D16AF960F004011FB /* DETweetSendButtonLandscape.png */; };
+		E92B5B9216AF960F004011FB /* DETweetSendButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1E16AF960F004011FB /* DETweetSendButtonLandscape@2x.png */; };
+		E92B5B9316AF960F004011FB /* DETweetSendButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B1F16AF960F004011FB /* DETweetSendButtonPortrait.png */; };
+		E92B5B9416AF960F004011FB /* DETweetSendButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B2016AF960F004011FB /* DETweetSendButtonPortrait@2x.png */; };
+		E92B5B9516AF960F004011FB /* DETweetURLAttachment.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B2116AF960F004011FB /* DETweetURLAttachment.png */; };
+		E92B5B9616AF960F004011FB /* DETweetURLAttachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B2216AF960F004011FB /* DETweetURLAttachment@2x.png */; };
+		E92B5B9716AF960F004011FB /* UIApplication+DETweetComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B2416AF960F004011FB /* UIApplication+DETweetComposeViewController.m */; };
+		E92B5B9816AF960F004011FB /* UIDevice+DETweetComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B2616AF960F004011FB /* UIDevice+DETweetComposeViewController.m */; };
+		E92B5B9916AF960F004011FB /* DEFacebookComposeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B2816AF960F004011FB /* DEFacebookComposeView.xib */; };
+		E92B5B9A16AF960F004011FB /* DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B2A16AF960F004011FB /* DEFacebookComposeViewController.m */; };
+		E92B5B9B16AF960F004011FB /* DEFacebookGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B2C16AF960F004011FB /* DEFacebookGradientView.m */; };
+		E92B5B9C16AF960F004011FB /* DEFacebookSheetCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B2E16AF960F004011FB /* DEFacebookSheetCardView.m */; };
+		E92B5B9D16AF960F004011FB /* DEFacebookTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B3016AF960F004011FB /* DEFacebookTextView.m */; };
+		E92B5B9E16AF960F004011FB /* DEFacebookAttachmentFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3216AF960F004011FB /* DEFacebookAttachmentFrame.png */; };
+		E92B5B9F16AF960F004011FB /* DEFacebookAttachmentFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3316AF960F004011FB /* DEFacebookAttachmentFrame@2x.png */; };
+		E92B5BA016AF960F004011FB /* DEFacebookCancelButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3416AF960F004011FB /* DEFacebookCancelButtonLandscape.png */; };
+		E92B5BA116AF960F004011FB /* DEFacebookCancelButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3516AF960F004011FB /* DEFacebookCancelButtonLandscape@2x.png */; };
+		E92B5BA216AF960F004011FB /* DEFacebookCancelButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3616AF960F004011FB /* DEFacebookCancelButtonPortrait.png */; };
+		E92B5BA316AF960F004011FB /* DEFacebookCancelButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3716AF960F004011FB /* DEFacebookCancelButtonPortrait@2x.png */; };
+		E92B5BA416AF960F004011FB /* DEFacebookCardAccountLine.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3816AF960F004011FB /* DEFacebookCardAccountLine.png */; };
+		E92B5BA516AF960F004011FB /* DEFacebookCardAccountLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3916AF960F004011FB /* DEFacebookCardAccountLine@2x.png */; };
+		E92B5BA616AF960F004011FB /* DEFacebookCardBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3A16AF960F004011FB /* DEFacebookCardBackground.png */; };
+		E92B5BA716AF960F004011FB /* DEFacebookCardBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3B16AF960F004011FB /* DEFacebookCardBackground@2x.png */; };
+		E92B5BA816AF960F004011FB /* DEFacebookCardHeaderLine.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3C16AF960F004011FB /* DEFacebookCardHeaderLine.png */; };
+		E92B5BA916AF960F004011FB /* DEFacebookCardHeaderLine@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3D16AF960F004011FB /* DEFacebookCardHeaderLine@2x.png */; };
+		E92B5BAA16AF960F004011FB /* DEFacebookPaperClip.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3E16AF960F004011FB /* DEFacebookPaperClip.png */; };
+		E92B5BAB16AF960F004011FB /* DEFacebookPaperClip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B3F16AF960F004011FB /* DEFacebookPaperClip@2x.png */; };
+		E92B5BAC16AF960F004011FB /* DEFacebookSendButtonLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4016AF960F004011FB /* DEFacebookSendButtonLandscape.png */; };
+		E92B5BAD16AF960F004011FB /* DEFacebookSendButtonLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4116AF960F004011FB /* DEFacebookSendButtonLandscape@2x.png */; };
+		E92B5BAE16AF960F004011FB /* DEFacebookSendButtonPortrait.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4216AF960F004011FB /* DEFacebookSendButtonPortrait.png */; };
+		E92B5BAF16AF960F004011FB /* DEFacebookSendButtonPortrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4316AF960F004011FB /* DEFacebookSendButtonPortrait@2x.png */; };
+		E92B5BB016AF960F004011FB /* DEFacebookURLAttachment.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4416AF960F004011FB /* DEFacebookURLAttachment.png */; };
+		E92B5BB116AF960F004011FB /* DEFacebookURLAttachment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4516AF960F004011FB /* DEFacebookURLAttachment@2x.png */; };
+		E92B5BB216AF960F004011FB /* NavBarLandscape.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4616AF960F004011FB /* NavBarLandscape.png */; };
+		E92B5BB316AF960F004011FB /* NavBarLandscape1.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4716AF960F004011FB /* NavBarLandscape1.png */; };
+		E92B5BB416AF960F004011FB /* NavBarLandscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4816AF960F004011FB /* NavBarLandscape@2x.png */; };
+		E92B5BB516AF960F004011FB /* NavBarLandscape@2x1.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B4916AF960F004011FB /* NavBarLandscape@2x1.png */; };
+		E92B5BB616AF960F004011FB /* UIApplication+DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B4B16AF960F004011FB /* UIApplication+DEFacebookComposeViewController.m */; };
+		E92B5BB716AF960F004011FB /* UIDevice+DEFacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B4D16AF960F004011FB /* UIDevice+DEFacebookComposeViewController.m */; };
+		E92B5BB816AF960F004011FB /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5216AF960F004011FB /* NSObject+SBJSON.m */; };
+		E92B5BB916AF960F004011FB /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5416AF960F004011FB /* NSString+SBJSON.m */; };
+		E92B5BBA16AF960F004011FB /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5616AF960F004011FB /* SBJSON.m */; };
+		E92B5BBB16AF960F004011FB /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5816AF960F004011FB /* SBJsonBase.m */; };
+		E92B5BBC16AF960F004011FB /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5A16AF960F004011FB /* SBJsonParser.m */; };
+		E92B5BBD16AF960F004011FB /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B5C16AF960F004011FB /* SBJsonWriter.m */; };
+		E92B5BBE16AF960F004011FB /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6016AF960F004011FB /* Base64Transcoder.c */; };
+		E92B5BBF16AF960F004011FB /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6216AF960F004011FB /* hmac.c */; };
+		E92B5BC016AF960F004011FB /* OAHMAC_SHA1SignatureProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6516AF960F004011FB /* OAHMAC_SHA1SignatureProvider.m */; };
+		E92B5BC116AF960F004011FB /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6716AF960F004011FB /* sha1.c */; };
+		E92B5BC216AF960F004011FB /* DEHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6A16AF960F004011FB /* DEHTTPRequest.m */; };
+		E92B5BC316AF960F004011FB /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6C16AF960F004011FB /* NSString+URLEncoding.m */; };
+		E92B5BC416AF960F004011FB /* OAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B6E16AF960F004011FB /* OAuth.m */; };
+		E92B5BC516AF960F004011FB /* tclose.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B7416AF960F004011FB /* tclose.png */; };
+		E92B5BC616AF960F004011FB /* ticon.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5B7516AF960F004011FB /* ticon.png */; };
+		E92B5BC716AF960F004011FB /* TwitterDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B7716AF960F004011FB /* TwitterDialog.m */; };
+		E92B5BC916AF964D004011FB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BC816AF964D004011FB /* FacebookSDK.framework */; };
+		E92B5BCB16AF9656004011FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCA16AF9656004011FB /* QuartzCore.framework */; };
+		E92B5BCD16AF965B004011FB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCC16AF965B004011FB /* AdSupport.framework */; };
+		E92B5BCF16AF965F004011FB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCE16AF965F004011FB /* Accounts.framework */; };
+		E92B5BD116AF9663004011FB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BD016AF9663004011FB /* Social.framework */; };
+		E92B5BD316AF9668004011FB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BD216AF9668004011FB /* Twitter.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E92B5ACD16AF95D1004011FB /* easyshare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = easyshare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E92B5AD116AF95D1004011FB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E92B5AD316AF95D1004011FB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E92B5AD516AF95D1004011FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E92B5AD916AF95D1004011FB /* easyshare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "easyshare-Info.plist"; sourceTree = "<group>"; };
+		E92B5ADB16AF95D1004011FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E92B5ADD16AF95D1004011FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E92B5ADF16AF95D1004011FB /* easyshare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "easyshare-Prefix.pch"; sourceTree = "<group>"; };
+		E92B5AE016AF95D1004011FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E92B5AE116AF95D1004011FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E92B5AE316AF95D1004011FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E92B5AE516AF95D1004011FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E92B5AE716AF95D1004011FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E92B5AE916AF95D1004011FB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E92B5AEA16AF95D1004011FB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E92B5AED16AF95D1004011FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		E92B5AF016AF95D1004011FB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		E92B5AF916AF960F004011FB /* DEEmbossedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEEmbossedLabel.h; sourceTree = "<group>"; };
+		E92B5AFA16AF960F004011FB /* DEEmbossedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEEmbossedLabel.m; sourceTree = "<group>"; };
+		E92B5AFB16AF960F004011FB /* DERuledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DERuledView.h; sourceTree = "<group>"; };
+		E92B5AFC16AF960F004011FB /* DERuledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DERuledView.m; sourceTree = "<group>"; };
+		E92B5AFD16AF960F004011FB /* DETweetAccountSelectorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetAccountSelectorViewController.h; sourceTree = "<group>"; };
+		E92B5AFE16AF960F004011FB /* DETweetAccountSelectorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetAccountSelectorViewController.m; sourceTree = "<group>"; };
+		E92B5AFF16AF960F004011FB /* DETweetComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DETweetComposeView.xib; sourceTree = "<group>"; };
+		E92B5B0016AF960F004011FB /* DETweetComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetComposeViewController.h; sourceTree = "<group>"; };
+		E92B5B0116AF960F004011FB /* DETweetComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetComposeViewController.m; sourceTree = "<group>"; };
+		E92B5B0216AF960F004011FB /* DETweetGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetGradientView.h; sourceTree = "<group>"; };
+		E92B5B0316AF960F004011FB /* DETweetGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetGradientView.m; sourceTree = "<group>"; };
+		E92B5B0416AF960F004011FB /* DETweetPoster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetPoster.h; sourceTree = "<group>"; };
+		E92B5B0516AF960F004011FB /* DETweetPoster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetPoster.m; sourceTree = "<group>"; };
+		E92B5B0616AF960F004011FB /* DETweetSheetCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetSheetCardView.h; sourceTree = "<group>"; };
+		E92B5B0716AF960F004011FB /* DETweetSheetCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetSheetCardView.m; sourceTree = "<group>"; };
+		E92B5B0816AF960F004011FB /* DETweetTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DETweetTextView.h; sourceTree = "<group>"; };
+		E92B5B0916AF960F004011FB /* DETweetTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DETweetTextView.m; sourceTree = "<group>"; };
+		E92B5B0A16AF960F004011FB /* OAuth+DEExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+DEExtensions.h"; sourceTree = "<group>"; };
+		E92B5B0B16AF960F004011FB /* OAuth+DEExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+DEExtensions.m"; sourceTree = "<group>"; };
+		E92B5B0C16AF960F004011FB /* OAuth+DEUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OAuth+DEUserDefaults.h"; sourceTree = "<group>"; };
+		E92B5B0D16AF960F004011FB /* OAuth+DEUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OAuth+DEUserDefaults.m"; sourceTree = "<group>"; };
+		E92B5B0F16AF960F004011FB /* DETweetAttachmentFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetAttachmentFrame.png; sourceTree = "<group>"; };
+		E92B5B1016AF960F004011FB /* DETweetAttachmentFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetAttachmentFrame@2x.png"; sourceTree = "<group>"; };
+		E92B5B1116AF960F004011FB /* DETweetCancelButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetCancelButtonLandscape.png; sourceTree = "<group>"; };
+		E92B5B1216AF960F004011FB /* DETweetCancelButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetCancelButtonLandscape@2x.png"; sourceTree = "<group>"; };
+		E92B5B1316AF960F004011FB /* DETweetCancelButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetCancelButtonPortrait.png; sourceTree = "<group>"; };
+		E92B5B1416AF960F004011FB /* DETweetCancelButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetCancelButtonPortrait@2x.png"; sourceTree = "<group>"; };
+		E92B5B1516AF960F004011FB /* DETweetCardAccountLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetCardAccountLine.png; sourceTree = "<group>"; };
+		E92B5B1616AF960F004011FB /* DETweetCardAccountLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetCardAccountLine@2x.png"; sourceTree = "<group>"; };
+		E92B5B1716AF960F004011FB /* DETweetCardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetCardBackground.png; sourceTree = "<group>"; };
+		E92B5B1816AF960F004011FB /* DETweetCardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetCardBackground@2x.png"; sourceTree = "<group>"; };
+		E92B5B1916AF960F004011FB /* DETweetCardHeaderLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetCardHeaderLine.png; sourceTree = "<group>"; };
+		E92B5B1A16AF960F004011FB /* DETweetCardHeaderLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetCardHeaderLine@2x.png"; sourceTree = "<group>"; };
+		E92B5B1B16AF960F004011FB /* DETweetPaperClip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetPaperClip.png; sourceTree = "<group>"; };
+		E92B5B1C16AF960F004011FB /* DETweetPaperClip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetPaperClip@2x.png"; sourceTree = "<group>"; };
+		E92B5B1D16AF960F004011FB /* DETweetSendButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetSendButtonLandscape.png; sourceTree = "<group>"; };
+		E92B5B1E16AF960F004011FB /* DETweetSendButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetSendButtonLandscape@2x.png"; sourceTree = "<group>"; };
+		E92B5B1F16AF960F004011FB /* DETweetSendButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetSendButtonPortrait.png; sourceTree = "<group>"; };
+		E92B5B2016AF960F004011FB /* DETweetSendButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetSendButtonPortrait@2x.png"; sourceTree = "<group>"; };
+		E92B5B2116AF960F004011FB /* DETweetURLAttachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DETweetURLAttachment.png; sourceTree = "<group>"; };
+		E92B5B2216AF960F004011FB /* DETweetURLAttachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DETweetURLAttachment@2x.png"; sourceTree = "<group>"; };
+		E92B5B2316AF960F004011FB /* UIApplication+DETweetComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+DETweetComposeViewController.h"; sourceTree = "<group>"; };
+		E92B5B2416AF960F004011FB /* UIApplication+DETweetComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+DETweetComposeViewController.m"; sourceTree = "<group>"; };
+		E92B5B2516AF960F004011FB /* UIDevice+DETweetComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DETweetComposeViewController.h"; sourceTree = "<group>"; };
+		E92B5B2616AF960F004011FB /* UIDevice+DETweetComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DETweetComposeViewController.m"; sourceTree = "<group>"; };
+		E92B5B2816AF960F004011FB /* DEFacebookComposeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DEFacebookComposeView.xib; sourceTree = "<group>"; };
+		E92B5B2916AF960F004011FB /* DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookComposeViewController.h; sourceTree = "<group>"; };
+		E92B5B2A16AF960F004011FB /* DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookComposeViewController.m; sourceTree = "<group>"; };
+		E92B5B2B16AF960F004011FB /* DEFacebookGradientView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookGradientView.h; sourceTree = "<group>"; };
+		E92B5B2C16AF960F004011FB /* DEFacebookGradientView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookGradientView.m; sourceTree = "<group>"; };
+		E92B5B2D16AF960F004011FB /* DEFacebookSheetCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookSheetCardView.h; sourceTree = "<group>"; };
+		E92B5B2E16AF960F004011FB /* DEFacebookSheetCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookSheetCardView.m; sourceTree = "<group>"; };
+		E92B5B2F16AF960F004011FB /* DEFacebookTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEFacebookTextView.h; sourceTree = "<group>"; };
+		E92B5B3016AF960F004011FB /* DEFacebookTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEFacebookTextView.m; sourceTree = "<group>"; };
+		E92B5B3216AF960F004011FB /* DEFacebookAttachmentFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookAttachmentFrame.png; sourceTree = "<group>"; };
+		E92B5B3316AF960F004011FB /* DEFacebookAttachmentFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookAttachmentFrame@2x.png"; sourceTree = "<group>"; };
+		E92B5B3416AF960F004011FB /* DEFacebookCancelButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCancelButtonLandscape.png; sourceTree = "<group>"; };
+		E92B5B3516AF960F004011FB /* DEFacebookCancelButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCancelButtonLandscape@2x.png"; sourceTree = "<group>"; };
+		E92B5B3616AF960F004011FB /* DEFacebookCancelButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCancelButtonPortrait.png; sourceTree = "<group>"; };
+		E92B5B3716AF960F004011FB /* DEFacebookCancelButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCancelButtonPortrait@2x.png"; sourceTree = "<group>"; };
+		E92B5B3816AF960F004011FB /* DEFacebookCardAccountLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardAccountLine.png; sourceTree = "<group>"; };
+		E92B5B3916AF960F004011FB /* DEFacebookCardAccountLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardAccountLine@2x.png"; sourceTree = "<group>"; };
+		E92B5B3A16AF960F004011FB /* DEFacebookCardBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardBackground.png; sourceTree = "<group>"; };
+		E92B5B3B16AF960F004011FB /* DEFacebookCardBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardBackground@2x.png"; sourceTree = "<group>"; };
+		E92B5B3C16AF960F004011FB /* DEFacebookCardHeaderLine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookCardHeaderLine.png; sourceTree = "<group>"; };
+		E92B5B3D16AF960F004011FB /* DEFacebookCardHeaderLine@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookCardHeaderLine@2x.png"; sourceTree = "<group>"; };
+		E92B5B3E16AF960F004011FB /* DEFacebookPaperClip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookPaperClip.png; sourceTree = "<group>"; };
+		E92B5B3F16AF960F004011FB /* DEFacebookPaperClip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookPaperClip@2x.png"; sourceTree = "<group>"; };
+		E92B5B4016AF960F004011FB /* DEFacebookSendButtonLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookSendButtonLandscape.png; sourceTree = "<group>"; };
+		E92B5B4116AF960F004011FB /* DEFacebookSendButtonLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookSendButtonLandscape@2x.png"; sourceTree = "<group>"; };
+		E92B5B4216AF960F004011FB /* DEFacebookSendButtonPortrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookSendButtonPortrait.png; sourceTree = "<group>"; };
+		E92B5B4316AF960F004011FB /* DEFacebookSendButtonPortrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookSendButtonPortrait@2x.png"; sourceTree = "<group>"; };
+		E92B5B4416AF960F004011FB /* DEFacebookURLAttachment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DEFacebookURLAttachment.png; sourceTree = "<group>"; };
+		E92B5B4516AF960F004011FB /* DEFacebookURLAttachment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DEFacebookURLAttachment@2x.png"; sourceTree = "<group>"; };
+		E92B5B4616AF960F004011FB /* NavBarLandscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarLandscape.png; sourceTree = "<group>"; };
+		E92B5B4716AF960F004011FB /* NavBarLandscape1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NavBarLandscape1.png; sourceTree = "<group>"; };
+		E92B5B4816AF960F004011FB /* NavBarLandscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarLandscape@2x.png"; sourceTree = "<group>"; };
+		E92B5B4916AF960F004011FB /* NavBarLandscape@2x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NavBarLandscape@2x1.png"; sourceTree = "<group>"; };
+		E92B5B4A16AF960F004011FB /* UIApplication+DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+DEFacebookComposeViewController.h"; sourceTree = "<group>"; };
+		E92B5B4B16AF960F004011FB /* UIApplication+DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+DEFacebookComposeViewController.m"; sourceTree = "<group>"; };
+		E92B5B4C16AF960F004011FB /* UIDevice+DEFacebookComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+DEFacebookComposeViewController.h"; sourceTree = "<group>"; };
+		E92B5B4D16AF960F004011FB /* UIDevice+DEFacebookComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+DEFacebookComposeViewController.m"; sourceTree = "<group>"; };
+		E92B5B5016AF960F004011FB /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		E92B5B5116AF960F004011FB /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		E92B5B5216AF960F004011FB /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		E92B5B5316AF960F004011FB /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		E92B5B5416AF960F004011FB /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		E92B5B5516AF960F004011FB /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		E92B5B5616AF960F004011FB /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		E92B5B5716AF960F004011FB /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		E92B5B5816AF960F004011FB /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		E92B5B5916AF960F004011FB /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		E92B5B5A16AF960F004011FB /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		E92B5B5B16AF960F004011FB /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		E92B5B5C16AF960F004011FB /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		E92B5B6016AF960F004011FB /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		E92B5B6116AF960F004011FB /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		E92B5B6216AF960F004011FB /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		E92B5B6316AF960F004011FB /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		E92B5B6416AF960F004011FB /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		E92B5B6516AF960F004011FB /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		E92B5B6616AF960F004011FB /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		E92B5B6716AF960F004011FB /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		E92B5B6816AF960F004011FB /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		E92B5B6916AF960F004011FB /* DEHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DEHTTPRequest.h; sourceTree = "<group>"; };
+		E92B5B6A16AF960F004011FB /* DEHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DEHTTPRequest.m; sourceTree = "<group>"; };
+		E92B5B6B16AF960F004011FB /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		E92B5B6C16AF960F004011FB /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		E92B5B6D16AF960F004011FB /* OAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuth.h; sourceTree = "<group>"; };
+		E92B5B6E16AF960F004011FB /* OAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuth.m; sourceTree = "<group>"; };
+		E92B5B6F16AF960F004011FB /* OAuthConsumerCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumerCredentials.h; sourceTree = "<group>"; };
+		E92B5B7116AF960F004011FB /* OAuthTwitterCallbacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthTwitterCallbacks.h; sourceTree = "<group>"; };
+		E92B5B7216AF960F004011FB /* TwitterLoginPopupDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginPopupDelegate.h; sourceTree = "<group>"; };
+		E92B5B7316AF960F004011FB /* TwitterLoginUiFeedback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterLoginUiFeedback.h; sourceTree = "<group>"; };
+		E92B5B7416AF960F004011FB /* tclose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tclose.png; sourceTree = "<group>"; };
+		E92B5B7516AF960F004011FB /* ticon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ticon.png; sourceTree = "<group>"; };
+		E92B5B7616AF960F004011FB /* TwitterDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterDialog.h; sourceTree = "<group>"; };
+		E92B5B7716AF960F004011FB /* TwitterDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterDialog.m; sourceTree = "<group>"; };
+		E92B5BC816AF964D004011FB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		E92B5BCA16AF9656004011FB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		E92B5BCC16AF965B004011FB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		E92B5BCE16AF965F004011FB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		E92B5BD016AF9663004011FB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		E92B5BD216AF9668004011FB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E92B5ACA16AF95D1004011FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B5BD316AF9668004011FB /* Twitter.framework in Frameworks */,
+				E92B5BD116AF9663004011FB /* Social.framework in Frameworks */,
+				E92B5BCF16AF965F004011FB /* Accounts.framework in Frameworks */,
+				E92B5BCD16AF965B004011FB /* AdSupport.framework in Frameworks */,
+				E92B5BCB16AF9656004011FB /* QuartzCore.framework in Frameworks */,
+				E92B5BC916AF964D004011FB /* FacebookSDK.framework in Frameworks */,
+				E92B5AD216AF95D1004011FB /* UIKit.framework in Frameworks */,
+				E92B5AD416AF95D1004011FB /* Foundation.framework in Frameworks */,
+				E92B5AD616AF95D1004011FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E92B5AC216AF95D1004011FB = {
+			isa = PBXGroup;
+			children = (
+				E92B5BD216AF9668004011FB /* Twitter.framework */,
+				E92B5BD016AF9663004011FB /* Social.framework */,
+				E92B5BCE16AF965F004011FB /* Accounts.framework */,
+				E92B5BCC16AF965B004011FB /* AdSupport.framework */,
+				E92B5BCA16AF9656004011FB /* QuartzCore.framework */,
+				E92B5BC816AF964D004011FB /* FacebookSDK.framework */,
+				E92B5AF716AF9604004011FB /* Libs */,
+				E92B5AD716AF95D1004011FB /* easyshare */,
+				E92B5AD016AF95D1004011FB /* Frameworks */,
+				E92B5ACE16AF95D1004011FB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E92B5ACE16AF95D1004011FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5ACD16AF95D1004011FB /* easyshare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E92B5AD016AF95D1004011FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5AD116AF95D1004011FB /* UIKit.framework */,
+				E92B5AD316AF95D1004011FB /* Foundation.framework */,
+				E92B5AD516AF95D1004011FB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E92B5AD716AF95D1004011FB /* easyshare */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5AE016AF95D1004011FB /* AppDelegate.h */,
+				E92B5AE116AF95D1004011FB /* AppDelegate.m */,
+				E92B5AE916AF95D1004011FB /* ViewController.h */,
+				E92B5AEA16AF95D1004011FB /* ViewController.m */,
+				E92B5AEC16AF95D1004011FB /* ViewController_iPhone.xib */,
+				E92B5AEF16AF95D1004011FB /* ViewController_iPad.xib */,
+				E92B5AD816AF95D1004011FB /* Supporting Files */,
+			);
+			path = easyshare;
+			sourceTree = "<group>";
+		};
+		E92B5AD816AF95D1004011FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5AD916AF95D1004011FB /* easyshare-Info.plist */,
+				E92B5ADA16AF95D1004011FB /* InfoPlist.strings */,
+				E92B5ADD16AF95D1004011FB /* main.m */,
+				E92B5ADF16AF95D1004011FB /* easyshare-Prefix.pch */,
+				E92B5AE316AF95D1004011FB /* Default.png */,
+				E92B5AE516AF95D1004011FB /* Default@2x.png */,
+				E92B5AE716AF95D1004011FB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E92B5AF716AF9604004011FB /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5AF816AF960F004011FB /* DETweetComposeViewController */,
+				E92B5B2716AF960F004011FB /* FacebookComposeViewController */,
+				E92B5B4E16AF960F004011FB /* unoffical-twitter-sdk */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		E92B5AF816AF960F004011FB /* DETweetComposeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5AF916AF960F004011FB /* DEEmbossedLabel.h */,
+				E92B5AFA16AF960F004011FB /* DEEmbossedLabel.m */,
+				E92B5AFB16AF960F004011FB /* DERuledView.h */,
+				E92B5AFC16AF960F004011FB /* DERuledView.m */,
+				E92B5AFD16AF960F004011FB /* DETweetAccountSelectorViewController.h */,
+				E92B5AFE16AF960F004011FB /* DETweetAccountSelectorViewController.m */,
+				E92B5AFF16AF960F004011FB /* DETweetComposeView.xib */,
+				E92B5B0016AF960F004011FB /* DETweetComposeViewController.h */,
+				E92B5B0116AF960F004011FB /* DETweetComposeViewController.m */,
+				E92B5B0216AF960F004011FB /* DETweetGradientView.h */,
+				E92B5B0316AF960F004011FB /* DETweetGradientView.m */,
+				E92B5B0416AF960F004011FB /* DETweetPoster.h */,
+				E92B5B0516AF960F004011FB /* DETweetPoster.m */,
+				E92B5B0616AF960F004011FB /* DETweetSheetCardView.h */,
+				E92B5B0716AF960F004011FB /* DETweetSheetCardView.m */,
+				E92B5B0816AF960F004011FB /* DETweetTextView.h */,
+				E92B5B0916AF960F004011FB /* DETweetTextView.m */,
+				E92B5B0A16AF960F004011FB /* OAuth+DEExtensions.h */,
+				E92B5B0B16AF960F004011FB /* OAuth+DEExtensions.m */,
+				E92B5B0C16AF960F004011FB /* OAuth+DEUserDefaults.h */,
+				E92B5B0D16AF960F004011FB /* OAuth+DEUserDefaults.m */,
+				E92B5B0E16AF960F004011FB /* Resources */,
+				E92B5B2316AF960F004011FB /* UIApplication+DETweetComposeViewController.h */,
+				E92B5B2416AF960F004011FB /* UIApplication+DETweetComposeViewController.m */,
+				E92B5B2516AF960F004011FB /* UIDevice+DETweetComposeViewController.h */,
+				E92B5B2616AF960F004011FB /* UIDevice+DETweetComposeViewController.m */,
+			);
+			path = DETweetComposeViewController;
+			sourceTree = "<group>";
+		};
+		E92B5B0E16AF960F004011FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B0F16AF960F004011FB /* DETweetAttachmentFrame.png */,
+				E92B5B1016AF960F004011FB /* DETweetAttachmentFrame@2x.png */,
+				E92B5B1116AF960F004011FB /* DETweetCancelButtonLandscape.png */,
+				E92B5B1216AF960F004011FB /* DETweetCancelButtonLandscape@2x.png */,
+				E92B5B1316AF960F004011FB /* DETweetCancelButtonPortrait.png */,
+				E92B5B1416AF960F004011FB /* DETweetCancelButtonPortrait@2x.png */,
+				E92B5B1516AF960F004011FB /* DETweetCardAccountLine.png */,
+				E92B5B1616AF960F004011FB /* DETweetCardAccountLine@2x.png */,
+				E92B5B1716AF960F004011FB /* DETweetCardBackground.png */,
+				E92B5B1816AF960F004011FB /* DETweetCardBackground@2x.png */,
+				E92B5B1916AF960F004011FB /* DETweetCardHeaderLine.png */,
+				E92B5B1A16AF960F004011FB /* DETweetCardHeaderLine@2x.png */,
+				E92B5B1B16AF960F004011FB /* DETweetPaperClip.png */,
+				E92B5B1C16AF960F004011FB /* DETweetPaperClip@2x.png */,
+				E92B5B1D16AF960F004011FB /* DETweetSendButtonLandscape.png */,
+				E92B5B1E16AF960F004011FB /* DETweetSendButtonLandscape@2x.png */,
+				E92B5B1F16AF960F004011FB /* DETweetSendButtonPortrait.png */,
+				E92B5B2016AF960F004011FB /* DETweetSendButtonPortrait@2x.png */,
+				E92B5B2116AF960F004011FB /* DETweetURLAttachment.png */,
+				E92B5B2216AF960F004011FB /* DETweetURLAttachment@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E92B5B2716AF960F004011FB /* FacebookComposeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B2816AF960F004011FB /* DEFacebookComposeView.xib */,
+				E92B5B2916AF960F004011FB /* DEFacebookComposeViewController.h */,
+				E92B5B2A16AF960F004011FB /* DEFacebookComposeViewController.m */,
+				E92B5B2B16AF960F004011FB /* DEFacebookGradientView.h */,
+				E92B5B2C16AF960F004011FB /* DEFacebookGradientView.m */,
+				E92B5B2D16AF960F004011FB /* DEFacebookSheetCardView.h */,
+				E92B5B2E16AF960F004011FB /* DEFacebookSheetCardView.m */,
+				E92B5B2F16AF960F004011FB /* DEFacebookTextView.h */,
+				E92B5B3016AF960F004011FB /* DEFacebookTextView.m */,
+				E92B5B3116AF960F004011FB /* Resources */,
+				E92B5B4A16AF960F004011FB /* UIApplication+DEFacebookComposeViewController.h */,
+				E92B5B4B16AF960F004011FB /* UIApplication+DEFacebookComposeViewController.m */,
+				E92B5B4C16AF960F004011FB /* UIDevice+DEFacebookComposeViewController.h */,
+				E92B5B4D16AF960F004011FB /* UIDevice+DEFacebookComposeViewController.m */,
+			);
+			path = FacebookComposeViewController;
+			sourceTree = "<group>";
+		};
+		E92B5B3116AF960F004011FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B3216AF960F004011FB /* DEFacebookAttachmentFrame.png */,
+				E92B5B3316AF960F004011FB /* DEFacebookAttachmentFrame@2x.png */,
+				E92B5B3416AF960F004011FB /* DEFacebookCancelButtonLandscape.png */,
+				E92B5B3516AF960F004011FB /* DEFacebookCancelButtonLandscape@2x.png */,
+				E92B5B3616AF960F004011FB /* DEFacebookCancelButtonPortrait.png */,
+				E92B5B3716AF960F004011FB /* DEFacebookCancelButtonPortrait@2x.png */,
+				E92B5B3816AF960F004011FB /* DEFacebookCardAccountLine.png */,
+				E92B5B3916AF960F004011FB /* DEFacebookCardAccountLine@2x.png */,
+				E92B5B3A16AF960F004011FB /* DEFacebookCardBackground.png */,
+				E92B5B3B16AF960F004011FB /* DEFacebookCardBackground@2x.png */,
+				E92B5B3C16AF960F004011FB /* DEFacebookCardHeaderLine.png */,
+				E92B5B3D16AF960F004011FB /* DEFacebookCardHeaderLine@2x.png */,
+				E92B5B3E16AF960F004011FB /* DEFacebookPaperClip.png */,
+				E92B5B3F16AF960F004011FB /* DEFacebookPaperClip@2x.png */,
+				E92B5B4016AF960F004011FB /* DEFacebookSendButtonLandscape.png */,
+				E92B5B4116AF960F004011FB /* DEFacebookSendButtonLandscape@2x.png */,
+				E92B5B4216AF960F004011FB /* DEFacebookSendButtonPortrait.png */,
+				E92B5B4316AF960F004011FB /* DEFacebookSendButtonPortrait@2x.png */,
+				E92B5B4416AF960F004011FB /* DEFacebookURLAttachment.png */,
+				E92B5B4516AF960F004011FB /* DEFacebookURLAttachment@2x.png */,
+				E92B5B4616AF960F004011FB /* NavBarLandscape.png */,
+				E92B5B4716AF960F004011FB /* NavBarLandscape1.png */,
+				E92B5B4816AF960F004011FB /* NavBarLandscape@2x.png */,
+				E92B5B4916AF960F004011FB /* NavBarLandscape@2x1.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E92B5B4E16AF960F004011FB /* unoffical-twitter-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B4F16AF960F004011FB /* JSON */,
+				E92B5B5D16AF960F004011FB /* OAuth */,
+				E92B5B7416AF960F004011FB /* tclose.png */,
+				E92B5B7516AF960F004011FB /* ticon.png */,
+				E92B5B7616AF960F004011FB /* TwitterDialog.h */,
+				E92B5B7716AF960F004011FB /* TwitterDialog.m */,
+			);
+			path = "unoffical-twitter-sdk";
+			sourceTree = "<group>";
+		};
+		E92B5B4F16AF960F004011FB /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B5016AF960F004011FB /* JSON.h */,
+				E92B5B5116AF960F004011FB /* NSObject+SBJSON.h */,
+				E92B5B5216AF960F004011FB /* NSObject+SBJSON.m */,
+				E92B5B5316AF960F004011FB /* NSString+SBJSON.h */,
+				E92B5B5416AF960F004011FB /* NSString+SBJSON.m */,
+				E92B5B5516AF960F004011FB /* SBJSON.h */,
+				E92B5B5616AF960F004011FB /* SBJSON.m */,
+				E92B5B5716AF960F004011FB /* SBJsonBase.h */,
+				E92B5B5816AF960F004011FB /* SBJsonBase.m */,
+				E92B5B5916AF960F004011FB /* SBJsonParser.h */,
+				E92B5B5A16AF960F004011FB /* SBJsonParser.m */,
+				E92B5B5B16AF960F004011FB /* SBJsonWriter.h */,
+				E92B5B5C16AF960F004011FB /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		E92B5B5D16AF960F004011FB /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B5E16AF960F004011FB /* Guts */,
+				E92B5B6F16AF960F004011FB /* OAuthConsumerCredentials.h */,
+				E92B5B7016AF960F004011FB /* Protocols */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		E92B5B5E16AF960F004011FB /* Guts */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B5F16AF960F004011FB /* Crypto */,
+				E92B5B6916AF960F004011FB /* DEHTTPRequest.h */,
+				E92B5B6A16AF960F004011FB /* DEHTTPRequest.m */,
+				E92B5B6B16AF960F004011FB /* NSString+URLEncoding.h */,
+				E92B5B6C16AF960F004011FB /* NSString+URLEncoding.m */,
+				E92B5B6D16AF960F004011FB /* OAuth.h */,
+				E92B5B6E16AF960F004011FB /* OAuth.m */,
+			);
+			path = Guts;
+			sourceTree = "<group>";
+		};
+		E92B5B5F16AF960F004011FB /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B6016AF960F004011FB /* Base64Transcoder.c */,
+				E92B5B6116AF960F004011FB /* Base64Transcoder.h */,
+				E92B5B6216AF960F004011FB /* hmac.c */,
+				E92B5B6316AF960F004011FB /* hmac.h */,
+				E92B5B6416AF960F004011FB /* OAHMAC_SHA1SignatureProvider.h */,
+				E92B5B6516AF960F004011FB /* OAHMAC_SHA1SignatureProvider.m */,
+				E92B5B6616AF960F004011FB /* OASignatureProviding.h */,
+				E92B5B6716AF960F004011FB /* sha1.c */,
+				E92B5B6816AF960F004011FB /* sha1.h */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		E92B5B7016AF960F004011FB /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E92B5B7116AF960F004011FB /* OAuthTwitterCallbacks.h */,
+				E92B5B7216AF960F004011FB /* TwitterLoginPopupDelegate.h */,
+				E92B5B7316AF960F004011FB /* TwitterLoginUiFeedback.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E92B5ACC16AF95D1004011FB /* easyshare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E92B5AF416AF95D1004011FB /* Build configuration list for PBXNativeTarget "easyshare" */;
+			buildPhases = (
+				E92B5AC916AF95D1004011FB /* Sources */,
+				E92B5ACA16AF95D1004011FB /* Frameworks */,
+				E92B5ACB16AF95D1004011FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = easyshare;
+			productName = easyshare;
+			productReference = E92B5ACD16AF95D1004011FB /* easyshare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E92B5AC416AF95D1004011FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Codespot;
+			};
+			buildConfigurationList = E92B5AC716AF95D1004011FB /* Build configuration list for PBXProject "easyshare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E92B5AC216AF95D1004011FB;
+			productRefGroup = E92B5ACE16AF95D1004011FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E92B5ACC16AF95D1004011FB /* easyshare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E92B5ACB16AF95D1004011FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B5ADC16AF95D1004011FB /* InfoPlist.strings in Resources */,
+				E92B5AE416AF95D1004011FB /* Default.png in Resources */,
+				E92B5AE616AF95D1004011FB /* Default@2x.png in Resources */,
+				E92B5AE816AF95D1004011FB /* Default-568h@2x.png in Resources */,
+				E92B5AEE16AF95D1004011FB /* ViewController_iPhone.xib in Resources */,
+				E92B5AF116AF95D1004011FB /* ViewController_iPad.xib in Resources */,
+				E92B5B7B16AF960F004011FB /* DETweetComposeView.xib in Resources */,
+				E92B5B8316AF960F004011FB /* DETweetAttachmentFrame.png in Resources */,
+				E92B5B8416AF960F004011FB /* DETweetAttachmentFrame@2x.png in Resources */,
+				E92B5B8516AF960F004011FB /* DETweetCancelButtonLandscape.png in Resources */,
+				E92B5B8616AF960F004011FB /* DETweetCancelButtonLandscape@2x.png in Resources */,
+				E92B5B8716AF960F004011FB /* DETweetCancelButtonPortrait.png in Resources */,
+				E92B5B8816AF960F004011FB /* DETweetCancelButtonPortrait@2x.png in Resources */,
+				E92B5B8916AF960F004011FB /* DETweetCardAccountLine.png in Resources */,
+				E92B5B8A16AF960F004011FB /* DETweetCardAccountLine@2x.png in Resources */,
+				E92B5B8B16AF960F004011FB /* DETweetCardBackground.png in Resources */,
+				E92B5B8C16AF960F004011FB /* DETweetCardBackground@2x.png in Resources */,
+				E92B5B8D16AF960F004011FB /* DETweetCardHeaderLine.png in Resources */,
+				E92B5B8E16AF960F004011FB /* DETweetCardHeaderLine@2x.png in Resources */,
+				E92B5B8F16AF960F004011FB /* DETweetPaperClip.png in Resources */,
+				E92B5B9016AF960F004011FB /* DETweetPaperClip@2x.png in Resources */,
+				E92B5B9116AF960F004011FB /* DETweetSendButtonLandscape.png in Resources */,
+				E92B5B9216AF960F004011FB /* DETweetSendButtonLandscape@2x.png in Resources */,
+				E92B5B9316AF960F004011FB /* DETweetSendButtonPortrait.png in Resources */,
+				E92B5B9416AF960F004011FB /* DETweetSendButtonPortrait@2x.png in Resources */,
+				E92B5B9516AF960F004011FB /* DETweetURLAttachment.png in Resources */,
+				E92B5B9616AF960F004011FB /* DETweetURLAttachment@2x.png in Resources */,
+				E92B5B9916AF960F004011FB /* DEFacebookComposeView.xib in Resources */,
+				E92B5B9E16AF960F004011FB /* DEFacebookAttachmentFrame.png in Resources */,
+				E92B5B9F16AF960F004011FB /* DEFacebookAttachmentFrame@2x.png in Resources */,
+				E92B5BA016AF960F004011FB /* DEFacebookCancelButtonLandscape.png in Resources */,
+				E92B5BA116AF960F004011FB /* DEFacebookCancelButtonLandscape@2x.png in Resources */,
+				E92B5BA216AF960F004011FB /* DEFacebookCancelButtonPortrait.png in Resources */,
+				E92B5BA316AF960F004011FB /* DEFacebookCancelButtonPortrait@2x.png in Resources */,
+				E92B5BA416AF960F004011FB /* DEFacebookCardAccountLine.png in Resources */,
+				E92B5BA516AF960F004011FB /* DEFacebookCardAccountLine@2x.png in Resources */,
+				E92B5BA616AF960F004011FB /* DEFacebookCardBackground.png in Resources */,
+				E92B5BA716AF960F004011FB /* DEFacebookCardBackground@2x.png in Resources */,
+				E92B5BA816AF960F004011FB /* DEFacebookCardHeaderLine.png in Resources */,
+				E92B5BA916AF960F004011FB /* DEFacebookCardHeaderLine@2x.png in Resources */,
+				E92B5BAA16AF960F004011FB /* DEFacebookPaperClip.png in Resources */,
+				E92B5BAB16AF960F004011FB /* DEFacebookPaperClip@2x.png in Resources */,
+				E92B5BAC16AF960F004011FB /* DEFacebookSendButtonLandscape.png in Resources */,
+				E92B5BAD16AF960F004011FB /* DEFacebookSendButtonLandscape@2x.png in Resources */,
+				E92B5BAE16AF960F004011FB /* DEFacebookSendButtonPortrait.png in Resources */,
+				E92B5BAF16AF960F004011FB /* DEFacebookSendButtonPortrait@2x.png in Resources */,
+				E92B5BB016AF960F004011FB /* DEFacebookURLAttachment.png in Resources */,
+				E92B5BB116AF960F004011FB /* DEFacebookURLAttachment@2x.png in Resources */,
+				E92B5BB216AF960F004011FB /* NavBarLandscape.png in Resources */,
+				E92B5BB316AF960F004011FB /* NavBarLandscape1.png in Resources */,
+				E92B5BB416AF960F004011FB /* NavBarLandscape@2x.png in Resources */,
+				E92B5BB516AF960F004011FB /* NavBarLandscape@2x1.png in Resources */,
+				E92B5BC516AF960F004011FB /* tclose.png in Resources */,
+				E92B5BC616AF960F004011FB /* ticon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E92B5AC916AF95D1004011FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E92B5ADE16AF95D1004011FB /* main.m in Sources */,
+				E92B5AE216AF95D1004011FB /* AppDelegate.m in Sources */,
+				E92B5AEB16AF95D1004011FB /* ViewController.m in Sources */,
+				E92B5B7816AF960F004011FB /* DEEmbossedLabel.m in Sources */,
+				E92B5B7916AF960F004011FB /* DERuledView.m in Sources */,
+				E92B5B7A16AF960F004011FB /* DETweetAccountSelectorViewController.m in Sources */,
+				E92B5B7C16AF960F004011FB /* DETweetComposeViewController.m in Sources */,
+				E92B5B7D16AF960F004011FB /* DETweetGradientView.m in Sources */,
+				E92B5B7E16AF960F004011FB /* DETweetPoster.m in Sources */,
+				E92B5B7F16AF960F004011FB /* DETweetSheetCardView.m in Sources */,
+				E92B5B8016AF960F004011FB /* DETweetTextView.m in Sources */,
+				E92B5B8116AF960F004011FB /* OAuth+DEExtensions.m in Sources */,
+				E92B5B8216AF960F004011FB /* OAuth+DEUserDefaults.m in Sources */,
+				E92B5B9716AF960F004011FB /* UIApplication+DETweetComposeViewController.m in Sources */,
+				E92B5B9816AF960F004011FB /* UIDevice+DETweetComposeViewController.m in Sources */,
+				E92B5B9A16AF960F004011FB /* DEFacebookComposeViewController.m in Sources */,
+				E92B5B9B16AF960F004011FB /* DEFacebookGradientView.m in Sources */,
+				E92B5B9C16AF960F004011FB /* DEFacebookSheetCardView.m in Sources */,
+				E92B5B9D16AF960F004011FB /* DEFacebookTextView.m in Sources */,
+				E92B5BB616AF960F004011FB /* UIApplication+DEFacebookComposeViewController.m in Sources */,
+				E92B5BB716AF960F004011FB /* UIDevice+DEFacebookComposeViewController.m in Sources */,
+				E92B5BB816AF960F004011FB /* NSObject+SBJSON.m in Sources */,
+				E92B5BB916AF960F004011FB /* NSString+SBJSON.m in Sources */,
+				E92B5BBA16AF960F004011FB /* SBJSON.m in Sources */,
+				E92B5BBB16AF960F004011FB /* SBJsonBase.m in Sources */,
+				E92B5BBC16AF960F004011FB /* SBJsonParser.m in Sources */,
+				E92B5BBD16AF960F004011FB /* SBJsonWriter.m in Sources */,
+				E92B5BBE16AF960F004011FB /* Base64Transcoder.c in Sources */,
+				E92B5BBF16AF960F004011FB /* hmac.c in Sources */,
+				E92B5BC016AF960F004011FB /* OAHMAC_SHA1SignatureProvider.m in Sources */,
+				E92B5BC116AF960F004011FB /* sha1.c in Sources */,
+				E92B5BC216AF960F004011FB /* DEHTTPRequest.m in Sources */,
+				E92B5BC316AF960F004011FB /* NSString+URLEncoding.m in Sources */,
+				E92B5BC416AF960F004011FB /* OAuth.m in Sources */,
+				E92B5BC716AF960F004011FB /* TwitterDialog.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E92B5ADA16AF95D1004011FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B5ADB16AF95D1004011FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E92B5AEC16AF95D1004011FB /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B5AED16AF95D1004011FB /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		E92B5AEF16AF95D1004011FB /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E92B5AF016AF95D1004011FB /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E92B5AF216AF95D1004011FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lsqlite3.0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E92B5AF316AF95D1004011FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = "-lsqlite3.0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E92B5AF516AF95D1004011FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "easyshare/easyshare-Prefix.pch";
+				INFOPLIST_FILE = "easyshare/easyshare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E92B5AF616AF95D1004011FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../../Documents/FacebookSDK\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "easyshare/easyshare-Prefix.pch";
+				INFOPLIST_FILE = "easyshare/easyshare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E92B5AC716AF95D1004011FB /* Build configuration list for PBXProject "easyshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B5AF216AF95D1004011FB /* Debug */,
+				E92B5AF316AF95D1004011FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E92B5AF416AF95D1004011FB /* Build configuration list for PBXNativeTarget "easyshare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E92B5AF516AF95D1004011FB /* Debug */,
+				E92B5AF616AF95D1004011FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E92B5AC416AF95D1004011FB /* Project object */;
+}
