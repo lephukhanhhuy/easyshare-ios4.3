@@ -101,10 +101,11 @@
 		E92B5BC716AF960F004011FB /* TwitterDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E92B5B7716AF960F004011FB /* TwitterDialog.m */; };
 		E92B5BC916AF964D004011FB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BC816AF964D004011FB /* FacebookSDK.framework */; };
 		E92B5BCB16AF9656004011FB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCA16AF9656004011FB /* QuartzCore.framework */; };
-		E92B5BCD16AF965B004011FB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCC16AF965B004011FB /* AdSupport.framework */; };
-		E92B5BCF16AF965F004011FB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCE16AF965F004011FB /* Accounts.framework */; };
-		E92B5BD116AF9663004011FB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BD016AF9663004011FB /* Social.framework */; };
+		E92B5BCD16AF965B004011FB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCC16AF965B004011FB /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E92B5BCF16AF965F004011FB /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BCE16AF965F004011FB /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		E92B5BD116AF9663004011FB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BD016AF9663004011FB /* Social.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		E92B5BD316AF9668004011FB /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92B5BD216AF9668004011FB /* Twitter.framework */; };
+		E92B5BD516AF9886004011FB /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = E92B5BD416AF9886004011FB /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -249,6 +250,7 @@
 		E92B5BCE16AF965F004011FB /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		E92B5BD016AF9663004011FB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E92B5BD216AF9668004011FB /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		E92B5BD416AF9886004011FB /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +310,7 @@
 		E92B5AD716AF95D1004011FB /* easyshare */ = {
 			isa = PBXGroup;
 			children = (
+				E92B5BD416AF9886004011FB /* image.png */,
 				E92B5AE016AF95D1004011FB /* AppDelegate.h */,
 				E92B5AE116AF95D1004011FB /* AppDelegate.m */,
 				E92B5AE916AF95D1004011FB /* ViewController.h */,
@@ -643,6 +646,7 @@
 				E92B5BB516AF960F004011FB /* NavBarLandscape@2x1.png in Resources */,
 				E92B5BC516AF960F004011FB /* tclose.png in Resources */,
 				E92B5BC616AF960F004011FB /* ticon.png in Resources */,
+				E92B5BD516AF9886004011FB /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

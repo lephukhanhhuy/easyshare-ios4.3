@@ -10,4 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)shareFacebook:(id)sender;
+- (IBAction)shareTwitter:(id)sender;
+
 @end
