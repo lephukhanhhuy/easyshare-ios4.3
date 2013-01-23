@@ -11,4 +11,4 @@ This project base on https://github.com/sakrist/FacebookSample and https://githu
 
 Config:
 
-![Alt text](https://lh3.googleusercontent.com/-D70TsBngOqg/UP9spdTIRZI/AAAAAAAAAig/Pb155k4M6As/s534/config.png "Optional title")
+![Alt text](https://lh4.googleusercontent.com/-HTRMvjtloQQ/UP-Jz3OHFTI/AAAAAAAAAi8/2VT9Ft5uG6k/s534/config.png "Optional title")
