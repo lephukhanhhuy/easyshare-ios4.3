@@ -10,6 +10,8 @@
 
 #import "ViewController.h"
 
+#import <FacebookSDK/FacebookSDK.h>
+
 @implementation AppDelegate
 
 - (void)dealloc
@@ -19,6 +21,24 @@
     [super dealloc];
 }
 
+void uncaughtExceptionHandler(NSException *exception) {
+    
+    NSString *crashString = [NSString stringWithFormat:@"Crash info: %@ \nStack: %@", exception, [exception callStackSymbols]];
+    
+    // Internal error reporting
+    NSLog(@"%@", crashString);
+    
+}
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation {
+    
+    NSSetUncaughtExceptionHandler(&uncaughtExceptionHandler);
+    
+    // attempt to extract a token from the url
+    return [FBSession.activeSession handleOpenURL:url];
+}
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
